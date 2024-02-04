@@ -5,8 +5,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const { default: axios } = require("axios");
 
-// const { typeDefs, resolvers } = require("./schema");
-
 async function startServer() {
   const app = express();
   const server = new ApolloServer({
