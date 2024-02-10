@@ -16,7 +16,7 @@ To set up a GraphQL server and client, follow these steps:
 
 1. **Server Setup:**
    - Initialize a new npm project: `npm init`.
-   - Install Express for creating the server: `npm install express`.
+   - Install Express for creating the server: `npm install express graphql express-graphql`.
    - Use Apollo Server for implementing the GraphQL server: [Apollo Server Documentation](https://www.apollographql.com/docs/apollo-server/)
    - Install required dependencies: `npm install @apollo/server graphql body-parser cors`.
 
