@@ -1,12 +1,9 @@
-npm install express apollo-server-express graphql mongoose
+<!-- npm install express apollo-server-express graphql mongoose
 
 npm install graphql@^15.3.0
 
-npm nodemon
+npm nodemon -->
 
-Below is a README file explaining the purpose and usage of each file in layman's terms, along with the dependencies required for your project:
-
----
 
 # Project Overview
 
