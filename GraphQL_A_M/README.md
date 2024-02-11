@@ -41,41 +41,81 @@ Install these dependencies by running the following command in your terminal:
 ```
 npm install express apollo-server-express mongoose
 ```
-## example queries to try 
-query {
+Sure, here's how you can include the example queries and mutations in the README.md file:
 
+---
+
+## GraphQL Queries and Mutations
+
+Here are some example GraphQL queries and mutations that you can execute using this server:
+
+### 1. Query: Get All Posts
+
+Retrieves all posts from the database.
+
+```graphql
+query {
   getAllPosts {
-  
-  id
-  title
-  description  
+    id
+    title
+    description  
   }
 }
-query{
+```
+
+### 2. Query: Get Post By ID
+
+Retrieves a specific post from the database by its ID.
+
+```graphql
+query {
   getPostById(id: "65c79acd3a8b362fdce8257e") {
     title
     description
   }
 }
-mutation{
-  createPost(post:{
-     title:"this is fourth post"
-     description:"description of fourth post"
-  })
-  {
+```
+
+### 3. Mutation: Create Post
+
+Creates a new post in the database.
+
+```graphql
+mutation {
+  createPost(post: {
+    title: "This is a new post"
+    description: "Description of the new post"
+  }) {
     id 
     title
   }
 }
-mutation{
+```
+
+### 4. Mutation: Delete Post By ID
+
+Deletes a post from the database by its ID.
+
+```graphql
+mutation {
   deletePostById(id: "65c7929a76c759c3ca6de0bf")
 }
-mutation{
-  UpdatePostById(id:"65c79bb43a8b362fdce82583",post:{
-       title:"This is second post"
-       description:"description of second post"
-  }){
+```
+
+### 5. Mutation: Update Post By ID
+
+Updates a post in the database by its ID.
+
+```graphql
+mutation {
+  UpdatePostById(id: "65c79bb43a8b362fdce82583", post: {
+    title: "Updated post title"
+    description: "Updated description of the post"
+  }) {
     id
     title
     description
-  } }
+  }
+}
+```
+--- 
