@@ -41,3 +41,41 @@ Install these dependencies by running the following command in your terminal:
 ```
 npm install express apollo-server-express mongoose
 ```
+## example queries to try 
+query {
+
+  getAllPosts {
+  
+  id
+  title
+  description  
+  }
+}
+query{
+  getPostById(id: "65c79acd3a8b362fdce8257e") {
+    title
+    description
+  }
+}
+mutation{
+  createPost(post:{
+     title:"this is fourth post"
+     description:"description of fourth post"
+  })
+  {
+    id 
+    title
+  }
+}
+mutation{
+  deletePostById(id: "65c7929a76c759c3ca6de0bf")
+}
+mutation{
+  UpdatePostById(id:"65c79bb43a8b362fdce82583",post:{
+       title:"This is second post"
+       description:"description of second post"
+  }){
+    id
+    title
+    description
+  } }
